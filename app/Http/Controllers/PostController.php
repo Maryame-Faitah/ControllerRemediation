@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostController extends Controller
 {
@@ -13,8 +14,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        //Retourner une view grace au controller
-        return view('post');
+        // Retourner une view avec une variable dedans
+        $posts = "Voici un string";
+        // Retourner une view grace au controller
+        return view('post',compact('posts'));
     }
 
     /**
