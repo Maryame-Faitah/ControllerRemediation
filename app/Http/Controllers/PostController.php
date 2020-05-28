@@ -14,7 +14,7 @@ class PostController extends Controller
     public function index()
     {
         //Retourner une view grace au controller
-        
+        return view('post');
     }
 
     /**
