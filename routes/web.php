@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// Nommer une route
+Route::resource('/post','PostController');
