@@ -18,4 +18,8 @@ Route::get('/', function () {
 });
 
 // Nommer une route
-Route::resource('/post','PostController');
+Route::get('/index','PostController@index');
+
+// Route pour les blades index, edit et show
+Route::get('/edit','PostController@edit');
+Route::get('/show','PostController@show');

@@ -17,7 +17,7 @@ class PostController extends Controller
         // Retourner une view avec une variable dedans
         $posts = "Voici un string";
         // Retourner une view grace au controller
-        return view('post',compact('posts'));
+        return view('index',compact('posts'));
     }
 
     /**
@@ -47,9 +47,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return view('show');
     }
 
     /**
@@ -58,9 +58,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view('edit');
     }
 
     /**
